@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>Uncategorized &#8211; Limestone</title>
+	<title>Uncategorized &#8211; wp-api</title>
 	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description></description>
-	<lastBuildDate>Sun, 02 Apr 2023 17:53:51 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 20 Apr 2023 18:01:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,11 +21,11 @@
 	<generator>https://wordpress.org/?v=6.2</generator>
 	<item>
 		<title>Hello world!</title>
-		<link>/2023/04/02/hello-world/</link>
-					<comments>/2023/04/02/hello-world/#comments</comments>
+		<link>/2023/04/20/hello-world/</link>
+					<comments>/2023/04/20/hello-world/#comments</comments>
 		
-		<dc:creator><![CDATA[aeeriksen]]></dc:creator>
-		<pubDate>Sun, 02 Apr 2023 17:53:51 +0000</pubDate>
+		<dc:creator><![CDATA[api-admin]]></dc:creator>
+		<pubDate>Thu, 20 Apr 2023 18:01:12 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">/?p=1</guid>
 
@@ -34,7 +34,7 @@
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2023/04/02/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>/2023/04/20/hello-world/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		

@@ -7,11 +7,11 @@
 	>
 <channel>
 	<title>
-	Comments for Limestone	</title>
+	Comments for wp-api	</title>
 	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description></description>
-	<lastBuildDate>Sun, 02 Apr 2023 17:53:51 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 20 Apr 2023 18:01:12 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
@@ -20,10 +20,10 @@
 	<item>
 		<title>
 		Comment on Hello world! by A WordPress Commenter		</title>
-		<link>/2023/04/02/hello-world/#comment-1</link>
+		<link>/2023/04/20/hello-world/#comment-1</link>
 
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
-		<pubDate>Sun, 02 Apr 2023 17:53:51 +0000</pubDate>
+		<pubDate>Thu, 20 Apr 2023 18:01:12 +0000</pubDate>
 		<guid isPermaLink="false">/?p=1#comment-1</guid>
 
 					<description><![CDATA[Hi, this is a comment.
