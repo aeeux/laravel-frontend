@@ -32,22 +32,39 @@ export default function Login() {
   };
 
   return (
-    <div className="login-signup-form animated fadeInDown">
-      <div className="form">
+    <div className="login-signup-form min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="form bg-white shadow-md rounded p-8 w-full max-w-md animated fadeInDown">
         <form onSubmit={onSubmit}>
-          <h1 className="title">Login into your account</h1>
+          <h1 className="title text-2xl font-bold mb-6 text-center">
+            Login into your account
+          </h1>
 
           {message && (
-            <div className="alert">
+            <div className="alert bg-red-200 text-red-700 p-4 mb-4 rounded">
               <p>{message}</p>
             </div>
           )}
 
-          <input ref={emailRef} type="email" placeholder="Email" />
-          <input ref={passwordRef} type="password" placeholder="Password" />
-          <button className="btn btn-block">Login</button>
-          <p className="message">
-            Not registered? <Link to="/signup">Create an account</Link>
+          <input
+            ref={emailRef}
+            type="email"
+            placeholder="Email"
+            className="block w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          />
+          <input
+            ref={passwordRef}
+            type="password"
+            placeholder="Password"
+            className="block w-full p-2 mb-4 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+          />
+          <button className="btn btn-block w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 focus:outline-none">
+            Login
+          </button>
+          <p className="message text-center mt-4">
+            Not registered?{" "}
+            <Link to="/signup" className="text-blue-500 hover:text-blue-700">
+              Create an account
+            </Link>
           </p>
         </form>
       </div>

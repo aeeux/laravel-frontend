@@ -11,6 +11,8 @@ import UserForm from "./views/UserForm";
 //products
 import AllProducts from "./views/AllProducts.jsx";
 import CreateProduct from "./views/CreateProduct.jsx";
+import Home from "./views/Home.jsx";
+import Shop from "./views/Shop.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Navigate to="/dashboard" />,
+        element: <Navigate to="/products" />,
       },
       {
         path: "/dashboard",
@@ -55,6 +57,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <GuestLayout />,
     children: [
+      {
+        path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "/shop",
+        element: <Shop />,
+      },
       {
         path: "/login",
         element: <Login />,

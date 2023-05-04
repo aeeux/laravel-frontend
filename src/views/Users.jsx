@@ -36,34 +36,31 @@ export default function Users() {
   };
 
   return (
-    <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <h1>Users</h1>
-        <Link className="btn-add" to="/users/new">
+    <div className="container mx-auto my-6">
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-2xl font-bold">Users</h1>
+        <Link
+          className="btn-add bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          to="/users/new"
+        >
           Add new
         </Link>
       </div>
-      <div className="card animated fadeInDown">
-        <table>
+      <div className="card animated fadeInDown bg-white shadow rounded">
+        <table className="min-w-full table-auto">
           <thead>
-            <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Create Date</th>
-              <th>Actions</th>
+            <tr className="text-left bg-gray-300">
+              <th className="px-4 py-2">ID</th>
+              <th className="px-4 py-2">Name</th>
+              <th className="px-4 py-2">Email</th>
+              <th className="px-4 py-2">Create Date</th>
+              <th className="px-4 py-2">Actions</th>
             </tr>
           </thead>
           {loading && (
             <tbody>
               <tr>
-                <td colSpan="5" class="text-center">
+                <td colSpan="5" className="text-center py-4">
                   Loading...
                 </td>
               </tr>
@@ -71,19 +68,27 @@ export default function Users() {
           )}
           {!loading && (
             <tbody>
-              {users.map((u) => (
-                <tr key={u.id}>
-                  <td>{u.id}</td>
-                  <td>{u.name}</td>
-                  <td>{u.email}</td>
-                  <td>{u.created_at}</td>
-                  <td>
-                    <Link className="btn-edit" to={"/users/" + u.id}>
+              {users.map((u, index) => (
+                <tr
+                  key={u.id}
+                  className={`${
+                    index % 2 ? "bg-gray-200" : "bg-gray-100"
+                  } hover:bg-gray-300`}
+                >
+                  <td className="px-4 py-2">{u.id}</td>
+                  <td className="px-4 py-2">{u.name}</td>
+                  <td className="px-4 py-2">{u.email}</td>
+                  <td className="px-4 py-2">{u.created_at}</td>
+                  <td className="px-4 py-2">
+                    <Link
+                      className="btn-edit bg-yellow-500 text-white py-1 px-2 rounded hover:bg-yellow-600"
+                      to={"/users/" + u.id}
+                    >
                       Edit
                     </Link>
                     &nbsp;
                     <button
-                      className="btn-delete"
+                      className="btn-delete bg-red-500 text-white py-1 px-2 rounded hover:bg-red-600"
                       onClick={(ev) => onDeleteClick(u)}
                     >
                       Delete
